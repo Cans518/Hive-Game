@@ -1,0 +1,47 @@
+/* Main window background */
+QLabel#backgroundImage {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+/* Buttons */
+QPushButton {
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Button colors */
+QPushButton#rulesButton {
+    background-color: #4CAF50;
+}
+
+QPushButton#pvpButton {
+    background-color: #2196F3;
+}
+
+QPushButton#pvcButton {
+    background-color: #FF5722;
+}
+
+QPushButton#exitButton {
+    background-color: #f44336;
+}
+
+/* Hover effect with lighter colors */
+QPushButton#rulesButton:hover {
+    background-color: #66BB6A;  /* Lighter green */
+}
+
+QPushButton#pvpButton:hover {
+    background-color: #64B5F6;  /* Lighter blue */
+}
+
+QPushButton#pvcButton:hover {
+    background-color: #FF8A65;  /* Lighter orange */
+}
+
+QPushButton#exitButton:hover {
+    background-color: #E57373;  /* Lighter red */
+}

@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>images/image1.jpg</file>
+        <file>images/logo.jpg</file>
+        <file>ButtonImage/10.png</file>
+        <file>ButtonImage/11.png</file>
+        <file>ButtonImage/12.png</file>
+        <file>ButtonImage/13.png</file>
+        <file>ButtonImage/14.png</file>
+        <file>ButtonImage/20.png</file>
+        <file>ButtonImage/21.png</file>
+        <file>ButtonImage/22.png</file>
+        <file>ButtonImage/23.png</file>
+        <file>ButtonImage/24.png</file>
+        <file>ButtonImage/15.png</file>
+        <file>ButtonImage/16.png</file>
+        <file>ButtonImage/17.png</file>
+        <file>ButtonImage/25.png</file>
+        <file>ButtonImage/26.png</file>
+        <file>ButtonImage/27.png</file>
+    </qresource>
+    <qresource prefix="/doc">
+        <file>doc/rule.md</file>
+        <file>doc/rule.html</file>
+    </qresource>
+    <qresource prefix="/ttf">
+        <file>LXGWWenKaiMonoGBScreen.ttf</file>
+    </qresource>
+    <qresource prefix="/video">
+        <file>video/rule.mp4</file>
+    </qresource>
+    <qresource prefix="/audio">
+        <file>music/background_music.mp3</file>
+        <file>music/background_music.wav</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>qss/mainwindows.qss</file>
+        <file>qss/rulewindows.qss</file>
+        <file>qss/GameWindows.qss</file>
+    </qresource>
+</RCC>

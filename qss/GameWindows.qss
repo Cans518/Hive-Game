@@ -1,0 +1,151 @@
+/* QMainWindow Styles */
+QMainWindow {
+    background-color: #f0f0f0;
+}
+
+/* QGroupBox Styles */
+QGroupBox {
+    font-weight: bold;
+    font-size: 16px;
+    color: #2E8B57;
+    border: 2px solid #8FBC8F;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+/* QLabel Styles */
+QLabel {
+    font-size: 14px;
+    color: #000080;
+}
+
+/* QGroupBox#turnInfoGroup Styles */
+QGroupBox#turnInfoGroup {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff6347;  /* 番茄红色 */
+    border: 2px solid #ff4500;
+    background-color: #fffaf0;
+}
+
+/* QDialog Styles */
+QDialog {
+    background-color: #f0f0f0;
+    border: 2px solid #8FBC8F;
+    border-radius: 10px;
+}
+
+/* QLineEdit Styles */
+QLineEdit {
+    font-size: 14px;
+    border: 1px solid #8FBC8F;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Default QPushButton Styles */
+QPushButton {
+    font-size: 14px;
+    background-color: #8FBC8F;
+    border: 1px solid #2E8B57;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #2E8B57;
+}
+
+/* Exit Button (Red) */
+QPushButton#exitButton {
+    background-color: #ff4d4d;  /* 红色 */
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+QPushButton#exitButton:hover {
+    background-color: #ff6666;
+}
+
+/* Restart Button (Green) */
+QPushButton#restartButton {
+    background-color: #4CAF50;  /* 绿色 */
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+QPushButton#restartButton:hover {
+    background-color: #66bb6a;
+}
+
+/* playerOneGroup Styles */
+QGroupBox#playerOneGroup {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1E90FF;  /* 道奇蓝 */
+    border: 2px solid #4682B4;
+    background-color: #E6F2FF;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* playerTwoGroup Styles */
+QGroupBox#playerTwoGroup {
+    font-weight: bold;
+    font-size: 16px;
+    color: #8B4513;  /* 树皮深棕色 */
+    border: 2px solid #A0522D; /* 较浅的棕色边框 */
+    background-color: #D2B48C; /* 浅棕色背景 */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* playTurnButton Styles */
+QPushButton#playTurnButton {
+    font-size: 14px;
+    background-color: #FFD700;  /* 金色 */
+    color: white;
+    border: 1px solid #FFA500;  /* 橙色边框 */
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+QPushButton#playTurnButton:hover {
+    background-color: #FFB14E;  /* 较亮的金橙色 */
+}
+
+/* OK Button (Teal) */
+QPushButton#okButton {
+    font-size: 14px;
+    background-color: #20B2AA;  /* 浅海绿色 */
+    color: white;
+    border: 1px solid #008080;  /* 深青色边框 */
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+QPushButton#okButton:hover {
+    background-color: #48D1CC;  /* 较亮的浅海绿色 */
+}
+
+/* Cancel Button (Purple) */
+QPushButton#cancelButton {
+    font-size: 14px;
+    background-color: #9370DB;  /* 紫色 */
+    color: white;
+    border: 1px solid #6A5ACD;  /* 中紫色边框 */
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+QPushButton#cancelButton:hover {
+    background-color: #B39DDB;  /* 较亮的淡紫色 */
+}
+
+
