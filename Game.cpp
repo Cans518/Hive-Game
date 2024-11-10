@@ -32,46 +32,35 @@ void Game::initializeGame(const std::string &player1Name, const std::string &pla
 }
 
 void Game::makeAIMove(GameWindow* gameWindow) {
+    static int run_time = 0;
     srand(static_cast<unsigned>(time(0)));  // 用时间来生成随机种子
-
     while (true) {
         try {
-            // 简单的AI逻辑：随机选择放置或移动
             bool placePiece = rand() % 2;  // 50% 概率选择放置或移动
 
             if (placePiece) {
-                // 随机选择放置棋子的坐标和类型
                 int x = rand() % 10;
                 int y = rand() % 10;
-                int pieceType = rand() % 8;  // 假设棋子的类型ID在0到7之间
-
-                // 尝试放置棋子
+                int pieceType = rand() % 8;
                 currentPlayer->placePiece(pieceType, x, y, *board);
                 gameWindow->updateBoardUI();
-                // AI成功放置棋子，跳出循环
                 break;
             } else {
-                // 随机选择移动棋子的起点和终点
                 int fromX = rand() % 10;
                 int fromY = rand() % 10;
                 int toX = rand() % 10;
                 int toY = rand() % 10;
-
                 std::shared_ptr<Piece> piece = getPieceAt(fromX, fromY);
-
-                // 检查是否是AI的棋子
                 if (piece && piece->getOwner() == currentPlayer) {
-                    // 尝试移动棋子
                     board->movePiece(fromX, fromY, toX, toY, piece->getName(), currentPlayer);
                     gameWindow->updateBoardUI();
-                    // AI成功移动棋子，跳出循环
+                    run_time = 0;
                     break;
                 }
-                // 如果AI尝试移动不是自己的棋子，抛出异常
                 throw std::runtime_error("AI tried to move an invalid piece.");
             }
         } catch (const std::exception &) {
-            // 捕获异常，但不显示消息，继续尝试直到成功
+            run_time ++;
             continue;
         }
     }
