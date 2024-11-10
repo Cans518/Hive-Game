@@ -105,13 +105,13 @@ void BoardUI::updateBoardUI(std::shared_ptr<ChessBoard> chessBoard) {
                         hexWidgetMatrix[row][col]->setHexagonColor(Qt::black);
                         break;
                     case PieceType::Ladybug_id:
-                        hexWidgetMatrix[row][col]->setHexagonColor(Qt::red);
+                        hexWidgetMatrix[row][col]->setImage(":/pic/ButtonImage/15.png");
                         break;
                     case PieceType::Mosquito_id:
-                        hexWidgetMatrix[row][col]->setHexagonColor(Qt::cyan);
+                        hexWidgetMatrix[row][col]->setImage(":/pic/ButtonImage/16.png");
                         break;
                     case PieceType::Pillbug_id:
-                        hexWidgetMatrix[row][col]->setHexagonColor(Qt::magenta);
+                        hexWidgetMatrix[row][col]->setImage(":/pic/ButtonImage/17.png");
                         break;
                     default:
                         hexWidgetMatrix[row][col]->setHexagonColor(QColor(255, 240, 150, 153));  // 蜂蜜色，80%透明度
@@ -143,12 +143,15 @@ void BoardUI::updateBoardUI(std::shared_ptr<ChessBoard> chessBoard) {
                         hexWidgetMatrix[row][col]->setHexagonColor(Qt::black);
                         break;
                     case PieceType::Ladybug_id:
+                        hexWidgetMatrix[row][col]->setImage(":/pic/ButtonImage/25.png");
                         hexWidgetMatrix[row][col]->setHexagonColor(Qt::red);
                         break;
                     case PieceType::Mosquito_id:
+                        hexWidgetMatrix[row][col]->setImage(":/pic/ButtonImage/26.png");
                         hexWidgetMatrix[row][col]->setHexagonColor(Qt::cyan);
                         break;
                     case PieceType::Pillbug_id:
+                        hexWidgetMatrix[row][col]->setImage(":/pic/ButtonImage/27.png");
                         hexWidgetMatrix[row][col]->setHexagonColor(Qt::magenta);
                         break;
                     default:

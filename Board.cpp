@@ -59,6 +59,12 @@ void ChessBoard::placePiece(int x, int y, uint8_t pieceType, std::shared_ptr<Pla
             throw std::invalid_argument("Invalid piece type.");
     }
 
+    // 如果是放置潮虫，将潮虫放置于vecter开头
+    if(newPiece->getPieceType() == PieceType::Pillbug_id){
+        board[x][y].emplace(board[x][y].begin(), newPiece);
+        return;
+    }
+
     // 如果是空位置或者放置的是 Beetle，可以放置棋子
     if (board[x][y].empty() || newPiece->getPieceType() == PieceType::Beetle_id) {
         board[x][y].push_back(newPiece);

@@ -99,7 +99,7 @@ Spider::Spider(int x, int y, std::shared_ptr<Player> owner)
 
 bool Spider::isValidMove(int toX, int toY, const ChessBoard& board) const {
     int distance = abs(toX - x) + abs(toY - y);
-    return distance == 3 && board.hasAdjacentPiece(toX, toY);
+    return distance == 4 && board.hasAdjacentPiece(toX, toY);
 }
 
 std::string Spider::getName() const {
@@ -124,7 +124,7 @@ Ladybug::Ladybug(int x, int y, std::shared_ptr<Player> owner)
 
 bool Ladybug::isValidMove(int toX, int toY, const ChessBoard& board) const {
     int distance = abs(toX - x) + abs(toY - y);
-    return distance == 3 && board.hasAdjacentPiece(toX, toY);
+    return distance == 4 && board.hasAdjacentPiece(toX, toY);
 }
 
 std::string Ladybug::getName() const {
@@ -148,11 +148,8 @@ Pillbug::Pillbug(int x, int y, std::shared_ptr<Player> owner)
     : Piece(x, y, PieceType::Pillbug_id, owner) {}
 
 bool Pillbug::isValidMove(int toX, int toY, const ChessBoard& board) const {
-    int dx = abs(toX - x);
-    int dy = abs(toY - y);
-    return (dx + dy == 1 || (dx == 1 && dy == 1)) && board.hasAdjacentPiece(toX, toY);
+    return (abs(toX - x) <= 1 && abs(toY - y) <= 1) && board.hasAdjacentPiece(toX, toY);
 }
-
 std::string Pillbug::getName() const {
     return "Pillbug";
 }

@@ -33,10 +33,10 @@ void Game::initializeGame(const std::string &player1Name, const std::string &pla
 
 void Game::makeAIMove(GameWindow* gameWindow) {
     static int run_time = 0;
-    srand(static_cast<unsigned>(time(0)));  // 用时间来生成随机种子
+    srand(static_cast<unsigned>(time(0)));
     while (true) {
         try {
-            bool placePiece = rand() % 2;  // 50% 概率选择放置或移动
+            bool placePiece = rand() % 2;
 
             if (placePiece) {
                 int x = rand() % 10;
@@ -160,11 +160,11 @@ void Game::playTurnUI(GameWindow *gameWindow) {
             int y = gameWindow->showIntegerInputDialog("Place Piece", "Enter y coordinate:", 0, 0, 9, 1, &ok);
             int pieceType = gameWindow->showIntegerInputDialog("Place Piece", "Enter piece type ID:", 0, 0, 7, 1, &ok);
 
-            if (turnCount == 4 && !player1->isQueenBeePlaced && currentPlayer == player1){
+            if (turnCount == 4 && !player1->isQueenBeePlaced && currentPlayer == player1 && pieceType != 0){
                 gameWindow->showMessage("Invalid Move", "You must place your QueenBee befor 4.");
                 return;
             }
-            if (turnCount == 4 && !player2->isQueenBeePlaced && currentPlayer == player2){
+            if (turnCount == 4 && !player2->isQueenBeePlaced && currentPlayer == player2 && pieceType != 0){
                 gameWindow->showMessage("Invalid Move", "You must place your QueenBee befor 4.");
                 return;
             }
