@@ -1,99 +1,185 @@
-# 忽略 Qt Creator 生成的配置文件
-*.user
-*.user.* 
-*.pro.user
-*.pro.user.*
-
-# 忽略 Qt 构建生成的文件
-*.qmake.stash
-*.qmake.cache
-
-# 忽略编译生成的文件
+# 编译输出
+/build/
 *.o
 *.obj
 *.so
 *.dylib
 *.dll
-*.a
-*.lib
 *.exe
 *.out
-*.app
-*.pch
-*.lo
-*.la
+*.a
+*.lib
 
-# 忽略 Qt 的 moc、uic 和 rcc 生成的文件
-moc_*.cpp
-moc_*.h
-ui_*.h
-qrc_*.cpp
+build/
 
-# 忽略 CMake 生成的构建目录和文件
+# CMake生成的文件
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
+compile_commands.json
+Testing/
 CTestTestfile.cmake
 *.cmake
-compile_commands.json  # 如果启用了生成 compile_commands.json
 
-# 忽略 qmake 生成的 Makefile
-Makefile*
-*.make
-*.mk
+# IDE文件
+.idea/
+.vscode/
+*.code-workspace
 
-# 忽略构建目录
-build-*/
-build/
-debug/
-release/
-dist/  # 如果使用 windeployqt 或 macdeployqt
+# 编译器文件
+*.ninja*
 
-# 忽略临时文件
+
+# 临时文件
+*.tmp
+*.log
 *.swp
+*.swo
+*.bak
+*.orig
+*.rej
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 其他
+*.user
+*.layout
+*.depend
+*.idb
+*.pdb
+*.ilk
+*.aps
+*.ncb
+*.sdf
+*.suo
+*.opt
+*.plg
+*.vsp
+*.vspx
+*.vspscc
+*.vssscc
+*.cache
+*.pyo
+*.pyc
+*.pyd
+*.class
+*.jar
+*.war
+*.ear
+*.swp
+*.swo
 *.bak
 *.tmp
 *.log
-
-# 忽略 Qt Creator 的辅助文件
-*.autosave
-
-# 忽略其他 IDE 生成的文件
-.idea/
-.vscode/
-
-# 忽略 Windows 特有的文件
-Thumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# 忽略 macOS 特有的文件（如果有跨平台开发）
-.DS_Store
-
-# 忽略 Visual Studio 生成的文件（如果使用 CMake 配合 Visual Studio）
-*.vcxproj
-*.vcxproj.user
-*.vcxproj.filters
-*.sln
-*.suo
-*.ncb
-*.user
-*.vcxproj.*
-ipch/
+*.diff
+*.patch
+*.pickle
+*.pid
+*.seed
+*.pid.lock
+*.cover
+*.coverage
+*.coveragerc
+*.coveralls.yml
+*.pyc
+*.pyo
+*.pyd
 *.pdb
-*.idb
-*.opensdf
-*.sdf
-*.VC.db
-*.VC.VC.opendb
-
-# 忽略包管理工具生成的文件夹（如 Conan 或 vcpkg）
-conanbuildinfo.*
-vcpkg_installed/
-
-# 忽略翻译文件生成的 .qm 文件
-*.qm
-
-# 忽略 Qt Installer Framework 生成的文件
-*.ifwoutput
+*.log
+*.csv
+*.dat
+*.db
+*.db3
+*.sql
+*.sqlite
+*.sqlite3
+*.tar
+*.tgz
+*.gz
+*.zip
+*.rar
+*.7z
+*.bz2
+*.xz
+*.lz
+*.lzma
+*.zst
+*.zstd
+*.cab
+*.msi
+*.deb
+*.rpm
+*.dmg
+*.iso
+*.img
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.qcow
+*.qcow2
+*.iso
+*.img
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.qcow
+*.qcow2
+*.iso
+*.img
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.qcow
+*.qcow2
+*.iso
+*.img
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.qcow
+*.qcow2
+*.iso
+*.img
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.qcow
+*.qcow2
+*.iso
+*.img
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.qcow
+*.qcow2
+*.iso
+*.img
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.qcow
+*.qcow2
